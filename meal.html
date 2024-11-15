@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Meal Plate</title>
+  <link rel="stylesheet" href="meal.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Meal Plate & Calorie Tracker</h1>
+  </header>
+
+  <div class="container">
+    <!-- Plate Section -->
+    <div id="plate" class="plate">
+      <p>Drag foods here</p>
+    </div>
+
+    <!-- Food List -->
+    <div class="food-list">
+      <h2>Available Foods</h2>
+      <div class="food" data-name="Apple" data-calories="52" draggable="true">🍎 Apple</div>
+      <div class="food" data-name="Rice" data-calories="130" draggable="true">🍚 Rice</div>
+      <div class="food" data-name="Chicken" data-calories="239" draggable="true">🍗 Chicken</div>
+    </div>
+  </div>
+
+  <!-- Calorie Calculator -->
+  <div class="calorie-calculator">
+    <h2>Daily Calorie Calculator</h2>
+    <div class="meals">
+      <div class="meal">
+        <h3>🍳 Breakfast</h3>
+        <p>Total Calories: <span id="breakfast-calories">0</span></p>
+      </div>
+      <div class="meal">
+        <h3>🥗 Lunch</h3>
+        <p>Total Calories: <span id="lunch-calories">0</span></p>
+      </div>
+      <div class="meal">
+        <h3>🍝 Dinner</h3>
+        <p>Total Calories: <span id="dinner-calories">0</span></p>
+      </div>
+      <div class="meal">
+        <h3>🍪 Snacks</h3>
+        <p>Total Calories: <span id="snacks-calories">0</span></p>
+      </div>
+    </div>
+    <h3>🍽 Daily Total Calories: <span id="daily-total-calories">0</span></h3>
+  </div>
+
+  <!-- Quantity Modal -->
+  <div id="quantity-modal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Enter Quantity and Select Meal</h3>
+      <p id="food-name">Selected Food: </p>
+      <input type="number" id="quantity" placeholder="Quantity in grams" min="1">
+      <select id="meal-select">
+        <option value="breakfast">Breakfast</option>
+        <option value="lunch">Lunch</option>
+        <option value="dinner">Dinner</option>
+        <option value="snacks">Snacks</option>
+      </select>
+      <button id="add-to-meal">Add to Meal</button>
+    </div>
+  </div>
+
+  <script src="meal.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  text-align: center;
+}
+
+header {
+  background: #ff6f61;
+  color: #fff;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Plate Styles */
+.plate {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fdf7e3, #ecd6a6);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2), inset 0 1px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
+  line-height: 300px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Food List */
+.food-list {
+  width: 200px;
+}
+
+.food {
+  margin: 10px 0;
+  padding: 10px;
+  background: #fff;
+  border: 2px solid #fcb69f;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.food:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Calorie Calculator */
+.calorie-calculator {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.meals {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.meal {
+  padding: 10px;
+  background: #ffecd2;
+  border: 2px solid #ff6f61;
+  border-radius: 8px;
+}
+
+.meal h3 {
+  margin: 0;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  padding: 10px 20px;
+  background: #ff6f61;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #e65b50;
+}
